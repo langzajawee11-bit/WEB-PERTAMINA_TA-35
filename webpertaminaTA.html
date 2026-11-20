@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Pertamina (Persero) - Energi untuk Negeri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pertamina: {
+                            red: '#E31B23',
+                            blue: '#003A70',
+                            green: '#78BE20',
+                            darkBlue: '#002548'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="flex items-center space-x-3">
+                <svg class="h-8 w-auto" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5 L35 5 L25 20 L0 20 Z" fill="#E31B23"/>
+            <path d="M28 22 L53 22 L43 37 L18 37 Z" fill="#003A70"/>
+                    <path d="M38 5 L63 5 L53 20 L28 20 Z" fill="#78BE20"/>
+                </svg>
+                <span class="text-xl font-extrabold tracking-tight text-pertamina-blue">PERTAMINA</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#hero" class="hover:text-pertamina-red transition-colors">Hero</a>
+                <a href="#tentang" class="hover:text-pertamina-red transition-colors">Tentang Kami</a>
+                <a href="#bisnis" class="hover:text-pertamina-red transition-colors">Bisnis Utama</a>
+                <a href="#berita" class="hover:text-pertamina-red transition-colors">Berita</a>
+                <a href="#kontak" class="hover:text-pertamina-red transition-colors">Kontak</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-2 bg-red-50 text-pertamina-red px-4 py-1.5 rounded-full text-xs font-bold border border-red-100">
+                <i class="fas fa-headset"></i>
+                <span>Call Center 135</span>
+            </div>
+
+            <button onclick="toggleMenu()" class="md:hidden text-slate-700 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 text-sm font-semibold text-slate-700">
+            <a href="#hero" onclick="toggleMenu()" class="block hover:text-pertamina-red">Hero</a>
+            <a href="#tentang" onclick="toggleMenu()" class="block hover:text-pertamina-red">Tentang Kami</a>
+            <a href="#bisnis" onclick="toggleMenu()" class="block hover:text-pertamina-red">Bisnis Utama</a>
+            <a href="#berita" onclick="toggleMenu()" class="block hover:text-pertamina-red">Berita</a>
+            <a href="#kontak" onclick="toggleMenu()" class="block hover:text-pertamina-red">Kontak</a>
+        </div>
+    </header>
+
+    <section id="hero" class="relative bg-pertamina-darkBlue text-white py-24 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://prokalteng.jawapos.com/wp-content/uploads/2025/01/Pertamina.jpg');"></div>
+        <div class="relative max-w-6xl mx-auto px-6 text-center md:text-left">
+            <div class="max-w-2xl space-y-6">
+                <span class="inline-block px-3.5 py-1 bg-pertamina-red text-white text-xs font-bold rounded-full uppercase tracking-wider">
+                    Energi Untuk Negeri
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+                    Menggerakkan Ekonomi, Menjaga Ketahanan Energi
+                </h1>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                    Pertamina berkomitmen menyediakan energi terbaik untuk Indonesia serta melangkah menuju transisi energi hijau yang berkelanjutan.
+                </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+                    <a href="#bisnis" class="bg-pertamina-blue hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-all shadow-md">
+                        Jelajahi Layanan
+                    </a>
+                    <a href="#kontak" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-6 py-3 rounded-xl text-sm transition-all">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-20 bg-white">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://prokalteng.jawapos.com/wp-content/uploads/2025/01/Pertamina.jpg');"></div>
+        <div class="max-w-6xl mx-auto px-6 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="text-xs font-bold tracking-widest text-pertamina-red uppercase">Profil Ringkas</span>
+               <h2 class="text-2xl md:text-3xl font-bold text-pertamina-darkBlue">Tentang PT Pertamina (Persero)</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Sebagai BUMN energi terbesar di Indonesia, Pertamina mengelola rantai pasok minyak, gas, dan energi terbarukan terintegrasi dari hulu hingga hilir secara profesional.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-2">
+                    <div class="flex items-center space-x-3 text-pertamina-blue font-bold">
+                        <i class="fas fa-eye text-lg"></i>
+                           <h3 class="text-base">Visi</h3>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Menjadi perusahaan energi global terdepan yang ramah lingkungan, berdaya saing, dan bernilai tambah.
+                    </p>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-2">
+                    <div class="flex items-center space-x-3 text-pertamina-green font-bold">
+                        <i class="fas fa-bullseye text-lg"></i>
+                        <h3 class="text-base">Misi</h3>
+                    </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                        Menjalankan bisnis minyak, gas, serta energi baru & terbarukan secara aman, efisien, dan berkelanjutan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bisnis" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+            <span class="text-xs font-bold tracking-widest text-pertamina-blue uppercase">Layanan Kami</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-pertamina-darkBlue">Sektor Bisnis Utama</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-3 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-red-50 text-pertamina-red rounded-xl flex items-center justify-center text-xl">
+                        <i class="fas fa-oil-well"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg">Sektor Hulu (Upstream)</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Eksplorasi dan produksi minyak mentah serta gas bumi di wilayah kerja domestik dan mancanegara.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-3 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-blue-50 text-pertamina-blue rounded-xl flex items-center justify-center text-xl">
+                        <i class="fas fa-gas-pump"></i>
+                    </div>
+      <h3 class="font-bold text-slate-800 text-lg">Sektor Hilir (Downstream)</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Pengolahan kilang, distribusi produk BBM, LPG, Avtur, dan jaringan SPBU di seluruh penjuru Nusantara.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-3 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 bg-green-50 text-pertamina-green rounded-xl flex items-center justify-center text-xl">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg">Energi Baru Terbarukan</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Pengembangan Panas Bumi (Geothermal), Panel Surya, Biofuel, dan inisiatif energi bersih Net Zero Emission.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="berita" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="text-xs font-bold tracking-widest text-pertamina-red uppercase">Informasi Terbaru</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-pertamina-darkBlue">Berita Terkini</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <article class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[11px] font-semibold text-slate-400">10 Oktober 2026</span>
+                        <h3 class="font-bold text-slate-800 text-base">Pertamina Perluas Jaringan Energi Bersih Ramah Lingkungan</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Langkah nyata akselerasi transisi energi hijau melalui peresmian fasilitas PLTS dan efisiensi kilang.
+                        </p>
+                    </div>
+                    <a href="#" class="text-xs font-bold text-pertamina-red hover:underline">Baca Selengkapnya &rarr;</a>
+                </article>
+
+                <article class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <span class="text-[11px] font-semibold text-slate-400">05 Oktober 2026</span>
+                        <h3 class="font-bold text-slate-800 text-base">Digitalisasi Sistem Penyaluran BBM untuk Masyarakat</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Meningkatkan efisiensi dan transparansi distribusi energi bersubsidi tepat sasaran di seluruh SPBU.
+                        </p>
+                    </div>
+                    <a href="#" class="text-xs font-bold text-pertamina-blue hover:underline">Baca Selengkapnya &rarr;</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="text-xs font-bold tracking-widest text-pertamina-blue uppercase">Layanan Informasi</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-pertamina-darkBlue">Hubungi Kami</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <form id="contactForm" onsubmit="submitForm(event)" class="bg-white p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm">
+                    <h3 class="font-bold text-slate-800 text-base">Kirim Pesan</h3>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 mb-1">Nama</label>
+                        <input type="text" required class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pertamina-blue focus:outline-none" placeholder="Nama Anda">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 mb-1">Email</label>
+                        <input type="email" required class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pertamina-blue focus:outline-none" placeholder="email@domain.com">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 mb-1">Pesan</label>
+                        <textarea rows="3" required class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-pertamina-blue focus:outline-none" placeholder="Tuliskan pesan..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-pertamina-darkBlue hover:bg-blue-900 text-white font-bold py-2.5 rounded-xl text-xs transition-all">
+                        Kirim Pesan
+                    </button>
+                </form>
+
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-3">
+                        <h3 class="font-bold text-slate-800 text-base">Kantor Pusat</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            <i class="fas fa-map-marker-alt text-pertamina-red mr-2"></i>
+                            Jl. Medan Merdeka Timur No. 11-13, Gambir, Jakarta Pusat 10110, Indonesia.
+                        </p>
+                    </div>
+
+                    <div class="bg-pertamina-red text-white p-6 rounded-2xl space-y-2">
+                        <span class="text-[11px] font-bold uppercase tracking-wider opacity-80">Layanan Pelanggan 24 Jam</span>
+                        <div class="text-3xl font-extrabold flex items-center space-x-3">
+                            <i class="fas fa-headset"></i>
+                            <span>135</span>
+                        </div>
+                        <p class="text-xs text-red-100">Siap membantu informasi BBM, LPG, dan layanan Pertamina.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t-2 border-pertamina-red">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-3">
+            <p class="font-bold text-white">PT Pertamina (Persero)</p>
+            <p>&copy; 2026 PT Pertamina (Persero). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        function submitForm(e) {
+            e.preventDefault();
+            alert('TERIMA KASIH! Pesan Anda telah berhasil dikirim ke WEB kami.');
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>
